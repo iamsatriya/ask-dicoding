@@ -26,15 +26,15 @@ class DetailMovieActivity : AppCompatActivity() {
 
         val movie = intent.getParcelableExtra<MovieEntity>(EXTRA_MOVIE) as MovieEntity
 
-        detailMovieBinding.tvItemTitle.text = movie.title
-        detailMovieBinding.tvItemOverview.text = movie.overview
-        detailMovieBinding.tvItemYear.text = TextUtils.substring(movie.releaseDate, 0, 4)
-        detailMovieBinding.tvItemVote.text = movie.vote.toString()
-        detailMovieBinding.tvItemLang.text = movie.language
+        detailMovieBinding.tvDetailItemTitle.text = movie.title
+        detailMovieBinding.tvDetailItemOverview.text = movie.overview
+        detailMovieBinding.tvDetailItemYear.text = TextUtils.substring(movie.releaseDate, 0, 4)
+        detailMovieBinding.tvDetailItemVote.text = movie.vote.toString()
+        detailMovieBinding.tvDetailItemLang.text = movie.language
         Glide.with(this)
             .load(movie.poster)
             .apply(RequestOptions.placeholderOf(R.drawable.ic_loading))
             .error(R.drawable.ic_error)
-            .into(detailMovieBinding.imgPoster)
+            .into(detailMovieBinding.detailImgPoster)
     }
 }
