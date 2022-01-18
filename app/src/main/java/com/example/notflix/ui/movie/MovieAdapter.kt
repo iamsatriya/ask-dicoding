@@ -8,10 +8,8 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.notflix.R
 import com.example.notflix.data.MovieEntity
-import com.example.notflix.databinding.ActivityDetailMovieBinding
 import com.example.notflix.databinding.ItemMovieBinding
 import com.example.notflix.ui.detail.DetailMovieActivity
-import com.example.notflix.ui.detail.DetailMovieFragment
 
 class MovieAdapter: RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
     private var listMovies = ArrayList<MovieEntity>()
