@@ -13,12 +13,16 @@
         android:theme="@style/Theme.Notflix">
         <activity
             android:name=".ui.detail.DetailMovieActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.Notflix.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
