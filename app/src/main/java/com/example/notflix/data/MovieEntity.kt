@@ -1,5 +1,9 @@
 package com.example.notflix.data
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 class MovieEntity (
     var movieId: Long,
     var title: String,
@@ -10,4 +14,4 @@ class MovieEntity (
     var adult: Boolean,
     var language: String,
     var releaseDate: String,
-)
+) : Parcelable

@@ -2,4 +2,9 @@
     <string name="app_name">Notflix</string>
     <string name="tab_text_1">All movies</string>
     <string name="tab_text_2">Bookmarks</string>
+    <string name="adult_rating">18+</string>
+    <string name="adult_title">Rating</string>
+    <string name="year_title">Year</string>
+    <string name="language_title">Language</string>
+    <string name="score_title">Score</string>
 </resources>
